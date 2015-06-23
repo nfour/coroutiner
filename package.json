@@ -1,0 +1,22 @@
+{
+	"name"				: "coroutiner"
+,	"description"		: "Transforms generator functions into coroutines"
+,	"version"			: "0.3.2"
+,	"author"			: { "name": "nfour" }
+
+,	"dependencies": {
+		"lutils" : "0.2.x"
+	,	"bluebird" : "2.9.x"
+}
+,	"devDependencies": {
+		"nodeunit": "^0.9.0"
+	}
+	
+,	"scripts": {
+		"build"		: "cake build"
+	,	"test"		: "npm run build && nodeunit ./test"
+	,	"publicate"	: "npm run test && npm publish"
+	}
+
+,	"main": "./coroutiner"
+}
