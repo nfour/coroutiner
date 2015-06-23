@@ -1,9 +1,13 @@
 {
 	"name"				: "coroutiner"
 ,	"description"		: "Transforms generator functions into coroutines"
-,	"version"			: "0.3.2"
+,	"version"			: "0.3.3"
 ,	"author"			: { "name": "nfour" }
-
+,	"repository"		: {
+		"type": "git",
+		"url": "https://github.com/nfour/coroutiner"
+	}
+	
 ,	"dependencies": {
 		"lutils" : "0.2.x"
 	,	"bluebird" : "2.9.x"

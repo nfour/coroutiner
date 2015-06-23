@@ -3,9 +3,7 @@
 ###
 	Creates a new coroutiner instance.
 	
-	@param newTypes {Object} An object which will merge with the coroutiner.types object
-	@param Promise {Function Promise} Your own Promise implimentation
-		@default require('bluebird')
+	@param options {Object}
 ###
 module.exports = new Coroutiner = (options = {}) ->
 	###
@@ -64,7 +62,8 @@ module.exports = new Coroutiner = (options = {}) ->
 		@param obj {Object or Array or Function}
 		@param depth {Number}
 		@param validator {Function} (Optional)
-			This function will be run for each property. When `false` is returned by validator, a property is skipped.
+			This function will be run for each GeneratorFunction encountered.
+			When `false` is returned by validator, a property is skipped.
 			
 			@param key
 			@param value
